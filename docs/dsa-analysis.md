@@ -32,7 +32,7 @@ $$\text{MTBF} = \frac{1}{\lambda}$$
 
 The failure rate parameter $\lambda$ is a key parameter in determining the probability of failure for a device, and is commonly used in reliability analysis and modeling of systems.
 
-## Double-Spend Attack Analisys
+## Double-Spend Attack Analysis
 
 - $T_{w}$: the waiting time for every omniverse transaction
 - $t_{r}$: the recovery time for the failure of a submission to the `ERC-6358` smart contracts on one blockchain
