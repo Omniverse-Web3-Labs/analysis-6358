@@ -18,7 +18,7 @@ $$P(\text{A fails continuously for time }T) = [1 - e^{-\lambda t}]^{\frac{T}{t}}
 
 This formula can be used to calculate the probability of continuous failure for any fixed period of time $T$, given the failure rate parameter $\lambda$ of the exponential distribution.
 
-## Detales about the $\lambda$
+## Details about the $\lambda$
 
 The failure rate parameter $\lambda$ in an exponential distribution is determined by the mean time between failures (MTBF) of the device. The MTBF represents the average time between failures for a device, and is usually measured in hours or some other unit of time.
 
