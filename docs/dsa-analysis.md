@@ -44,15 +44,19 @@ The failure rate parameter $\lambda$ is a key parameter in determining the proba
 
 - One synchronizer for one chain
 
-$$P_{one-sync-one-chain}=[1 - e^{-\lambda t_{r}}]^{\frac{T_{w}}{t_{r}}}$$
+    $$P_{one-sync-one-chain}=[1 - e^{-\lambda t_{r}}]^{\frac{T_{w}}{t_{r}}}$$
 
-- One synchronizer for $N_{c}$ chains  
+- One synchronizer for $N_{c}$ chains. As submitting to one chain fails then the synchronization fails, the successful synchronization can be calculated as 
+ 
+    $$P_{successful-sync}=\prod{P_{chain-i}(X>t_{r}\mid\lambda)}=(e^{-\lambda t_{r}})^{N_{c}}$$  
 
-$$P_{one-sync-N-chains}=[1 - (e^{-\lambda t_{r}})^{N_{c}}]^{\frac{T_{w}}{t_{r}}}$$
+    in one time interval, and then the probability of the continous synchronization failure is:  
+
+    $$P_{one-sync-N-chains}=[1 - (e^{-\lambda t_{r}})^{N_{c}}]^{\frac{T_{w}}{t_{r}}}$$
 
 - $N_{s}$ synchronizers for $N_{c}$ chains. This is the probability that the synchronization of a transaction has failed, which can be considered as the probability of a successful double-spend attack under the suppose mentioned above.  
 
-$$P_{Successful-DSA}=P_{sync-fail}=([1 - (e^{-\lambda t_{r}})^{N_{c}}]^{\frac{T_{w}}{t_{r}}})^{N_{s}}$$
+    $$P_{Successful-DSA}=P_{sync-fail}=([1 - (e^{-\lambda t_{r}})^{N_{c}}]^{\frac{T_{w}}{t_{r}}})^{N_{s}}$$
 
 ### Results
 

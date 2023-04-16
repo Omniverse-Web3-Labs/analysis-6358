@@ -11,6 +11,7 @@ CHAINNUM = 100
 YEARMINUTES = 365 * 24 * 60
 
 def prob_double_spend_attack(mtbf = MTBF, waitingtime = WAITINGTIME, recovertime = RECOVERTIME, syncnum = SYNCNUM, chainnum = CHAINNUM):
+    
     lmd = 1. / mtbf;
 
     p_fail_single = (1. - math.pow(math.exp(-lmd * recovertime), chainnum)) ** (waitingtime / recovertime)
@@ -23,7 +24,7 @@ def prob_double_spend_attack(mtbf = MTBF, waitingtime = WAITINGTIME, recovertime
 
 
     malicious_times_per_year = YEARMINUTES * p_fail
-    print("The suspected network fail times: ", YEARMINUTES / mtbf)
+    print("The supposed network fail times: ", YEARMINUTES / mtbf)
     print("successful attack times: ", malicious_times_per_year)
 
 
