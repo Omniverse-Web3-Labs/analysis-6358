@@ -71,7 +71,7 @@ $$P_{Successful-DSA}=P_{sync-fail}=([1 - (e^{-\lambda t_{r}})^{N_{c}}]^{\frac{T_
 
 Recall that The probability density function (PDF) of the exponential distribution is given by:  
 
-$$f(x) = \left\{  \begin{array}{rcl} 
+$$f(x) = \left\\{  \begin{array}{rcl} 
 \lambda e^{-\lambda x}, x\geq 0\\ 
 0, x\leq 0
 \end{array} \space (\lambda>0) \right . $$  
