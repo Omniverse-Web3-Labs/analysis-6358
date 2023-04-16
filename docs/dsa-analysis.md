@@ -1,6 +1,6 @@
 ## Calculate the probability of continous failure 
 
-If the probability of failure of device A is exponentially distributed, then the probability that it will fail in a given time interval of length $t$ is given by:
+If the probability of failure of device A is [exponentially distributed](#exponential-distribution), then the probability that it will fail in a given time interval of length $t$ is given by:
 
 $$P(\text{A fails in }t \text{ units of time}) = 1 - e^{-\lambda t}$$
 
@@ -64,3 +64,25 @@ $$P_{Successful-DSA}=P_{sync-fail}=([1 - (e^{-\lambda t_{r}})^{N_{c}}]^{\frac{T_
 | 120 | 5 | 2 | 20 | 5 | $1.43\times 10^{-7}$ | 0.075 |
 | 120 | 10 | 2 | 100 | 15 | $1.52\times 10^{-7}$ | 0.08 |
 | 120 | 5 | 2 | 100 | 25 | $2.08\times 10^{-6}$ | 1.09 |
+
+## Appendix
+
+### Exponential Distribution
+
+Recall that The probability density function (PDF) of the exponential distribution is given by:  
+
+$$f(x)=\left\{ \begin{array}{rcl}
+\lambda e^{-\lambda x}, x\geq 0 \\
+0, x\leq 0
+\end{array}\right. (\lambda > 0)
+$$
+
+and the cumulative distribution function (CDF) of the exponential distribution can be calculated by:  
+
+$$P(X<t|\lambda)=\int_{0}^{t}f(x)dx=1-e^{-\lambda t}$$
+
+The mean and variance of the exponential distribution are given by:
+
+$$Mean = \frac{1}{\lambda}$$  
+
+$$Variance =\frac{1}{\lambda ^ {2}}$$  
