@@ -20,7 +20,7 @@ In this simplified model, we will use an [exponential distribution](#exponential
 
 - To calculate the probability of a successful submission to one chain by one synchronizer within the $T_{w}$, we need to calculate the probability of successfully submitting the transaction within $T_{w}$, and the synchronizer needs to work more than the submission time at the same time.  
 
-    $$P_{s-1-1}=\int_{0}^{T_{w}}[\int_{t}^{+\infty}{\lambda_{1}e^{-\lambda_{}x}}dx]\lambda_{2}e^{-\lambda_{2}t}dt=\frac{\lambda_{2}}{\lambda_{1}+\lambda_{2}}(1-e^{-(\lambda_{1}+\lambda_{2})T_{w}})$$
+    $$P_{s-1-1}=\int_{0}^{T_{w}}[\int_{t}^{+\infty}{\lambda_{1}e^{-\lambda_{1}x}}dx]\lambda_{2}e^{-\lambda_{2}t}dt=\frac{\lambda_{2}}{\lambda_{1}+\lambda_{2}}(1-e^{-(\lambda_{1}+\lambda_{2})T_{w}})$$
 
     where $\lambda_{1}=\frac{1}{MTBF}$ and $\lambda_{2}=\frac{1}{t_{o}}$  
 
