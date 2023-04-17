@@ -1,12 +1,10 @@
-# Analysis  
+# Double-Spend Attack Analysis
 
-## Double-Spend Attack Analysis
-
-### Simplified Model  
+## Simplified Model  
 
 In this simplified model, we will use an [exponential distribution](#exponential-distribution) to describe the working process of the synchronizers. And use another **exponential distribution** to describe the time of successful submission of a smart contract call transaction.  
 
-#### Parameters
+### Parameters
 
 - `MTBF` is the mean time between failures of the synchronizers, which determines the [$\lambda$](#details-about-the-mtbf) of the **exponential distribution**
 - $t_{o}$ is the mean time of a successful submission of a smart contract call transaction when the synchronizer is working. In the simplified model, other factors can be considered as a black box and all of them are finally reflected in the $t_{o}$. For example, if a submission is not confirmed after a short time, the synchronizer will re-submit it again immediately, and this time will be included in the $t_{o}$. The $t_{o}$ determines the $\lambda$ of an **exponential distribution** too  
@@ -14,7 +12,7 @@ In this simplified model, we will use an [exponential distribution](#exponential
 - $N_{c}$: the number of blockchains one `ERC-6358` token is deployed  
 - $N_{s}$: the number of off-chain synchronizers working for the `ERC-6358` token  
 
-#### Principle
+### Principle
 
 *Note that we suppose the attacking user can successfully submit omniverse transactions **with probability `1.0`**, although at the same point, it is with a very low probability that the attacker succeeds but all the synchronizers cannot.*  
 
@@ -36,7 +34,7 @@ In this simplified model, we will use an [exponential distribution](#exponential
 
     $$P_{s-dsa}=1-P_{s-n-n}$$  
 
-#### Results
+### Results
 
 - *The precision of the time is `1` minute.*
 - *DSA stands for double-spend attack.*
