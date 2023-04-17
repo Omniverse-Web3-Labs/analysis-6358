@@ -16,6 +16,6 @@
 - In parallel-system structure, the systems are independent and parallel
 - To secceed, at least one system works 
 
-It can be proved that if all the corresponding components in the two diagrams are identical, the success probability in [Parallel Components (Figure.1)](#parallel-components) is greater than [Parallel Systems (Figure.2)](#parallel-system).  
+It can be proved that if all the corresponding components in the two diagrams are identical, the success probability in [Parallel Components (Figure.1)](#parallel-components) is greater than in [Parallel Systems (Figure.2)](#parallel-system).  
 
 In [the simplified model of DSA analysis](dsa-analysis.md#simplified-model), successful synchronization needs all the chains to get the successful submission, but for a single chain, the successful submission can be made by any synchronizer. In addition there's no need for. So the model is related to the [Figure.1](#parallel-components).  
