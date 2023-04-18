@@ -1,5 +1,9 @@
 # Double-Spend Attack Analysis
 
+Actually, with a zk-rollup layer for omnichians, the `double-spend attack` will be finally settled. This article presents a detailed analysis of the double-spent attacks without the zk-rollup layer for omnichians, and will prove that the probability of successful DSA is very low with a longer wait time or more synchronizers.  
+
+To understand the analysis, we need some knowledge of [exponential distribution](#exponential-distribution) and [reliability](./reliability-analysis.md). You can ignore the analysis and directly jump to the [results](#results).  
+
 ## Simplified Model  
 
 In this simplified model, we will use an [exponential distribution](#exponential-distribution) to describe the working process of the synchronizers. And use another **exponential distribution** to describe the time of successful submission of a smart contract call transaction.  
