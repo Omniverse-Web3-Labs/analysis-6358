@@ -65,11 +65,11 @@ $$f(x) = \left\\{  \begin{array}{rcl}
 
 and the cumulative distribution function (CDF) of the exponential distribution can be calculated by:  
 
-$$P(X < t\mid\lambda)=\int_{0}^{t}{\lambda e^{-\lambda t}}dx=1-e^{-\lambda t}$$  
+$$P(X < t\mid\lambda)=\int_{0}^{t}{\lambda e^{-\lambda x}}dx=1-e^{-\lambda t}$$  
 
 and  
 
-$$P(X > t\mid\lambda)=\int_{t}^{+\infty}{\lambda e^{-\lambda t}}dx=e^{-\lambda t}$$  
+$$P(X > t\mid\lambda)=\int_{t}^{+\infty}{\lambda e^{-\lambda x}}dx=e^{-\lambda t}$$  
 
 The mean and variance of the exponential distribution are given by:
 
